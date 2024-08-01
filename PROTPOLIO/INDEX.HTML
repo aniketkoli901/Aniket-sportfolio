@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+
+    <title>www.aniketprotfolio.com</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Aniket</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Servies</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi! i am <span class="blue">Aniket koli</span> <br>  i am frontend developer</div>
+            <div class="rightSection">
+                <img src="964868A2-C5F0-411A-A435-6C9342D7EB5F.png" alt="">
+            </div>
+        </section>
+        <!-- *******//about me**************************** -->
+        <div id="about-me">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="DC1D264F-94F3-41DC-9D8F-CE917F86ED51_1_201_a.jpeg" alt="">
+                    </div>
+                    <div class="about-col-2"><h1>About Me</h1>
+                        <p>Motivated and detail-oriented Fresher Mechanical Engineer with a passion for frontend development and maintain a relational database system for the storage, retrieval, and manipulation of data. Develop different Creative and detail-oriented Web Designer using languages such as Developed complex user interfaces with HTML, CSS, JavaScript, React, Angular and ensured a user-friendly experience</p>
+                    <div class="tab-list">
+                        <P class="tab-links active-links" onclick="opentab('skills')">Skills</P>
+                        <P class="tab-links"onclick="opentab('Experience')">Experience</P>
+                        <P class="tab-links"onclick="opentab('Education')">Education</P>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web development</span><br>Designing  the infterfaces</li>
+                            <li><span>java</span><br>backend</li>
+                            <li><span>SQL</span><br>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Web development</span><br>Designing  the infterfaces</li>
+                            <li><span>java</span><br>backend</li>
+                            <li><span>SQL</span><br>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Web development</span><br>Designing  the infterfaces</li>
+                            <li><span>java</span><br>backend</li>
+                            <li><span>SQL</span><br>SQL</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+var tabcontent=document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+  for(tablink of tablinks){
+    tablink.classlist.remove("active-links");
+  }
+  for(tabcontent of tabcontents){
+    tabcontent.classlist.remove("active-tab");
+  }
+  event.currentTarget.classlist.add("active-link")
+}
+    </script>
+</body>
+</html>
